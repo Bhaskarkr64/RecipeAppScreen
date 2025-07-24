@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -40,6 +41,8 @@ android {
 }
 
 dependencies {
+    //navController
+    implementation(libs.androidx.navigation.compose)
 
     //Compose ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2")
@@ -52,8 +55,6 @@ dependencies {
 
     //Image Loading
     implementation(libs.coil.compose)
-
-    implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))

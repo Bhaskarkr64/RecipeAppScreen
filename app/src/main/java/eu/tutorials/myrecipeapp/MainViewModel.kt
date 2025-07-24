@@ -19,8 +19,9 @@ class MainViewModel : ViewModel() {
         viewModelScope.launch {
             try {
                 val response = recipeService.getCategories()
-                val filteredList = response.categories.filter {
-                    it.strCategory.lowercase() != "beef"
+                var filteredList = response.categories.filter {
+                    val categoryName = it.strCategory.lowercase()
+                    categoryName!="beef"&&categoryName!="pork"
                 }
 
                 _categoriesState.value = _categoriesState.value.copy(
