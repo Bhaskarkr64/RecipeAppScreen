@@ -2,8 +2,10 @@ package eu.tutorials.myrecipeapp
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.rememberScrollState
@@ -33,6 +35,7 @@ fun CategoryDetailScreen(category: Category){
             textAlign = TextAlign.Justify,
             modifier = Modifier.verticalScroll(rememberScrollState())
             )
+
 
     }
 }
