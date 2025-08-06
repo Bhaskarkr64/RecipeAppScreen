@@ -39,7 +39,7 @@ com.yourpackage.recipeapp
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/recipe-app.git](https://github.com/Bhaskarkr64/LocationApp.git
+   git clone https://github.com/Bhaskarkr64/LocationApp.git
 ````
 
 2. Open in **Android Studio**
